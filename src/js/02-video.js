@@ -12,5 +12,5 @@ let currentTime = evt.seconds;
 localStorage.setItem("videoplayer-current-time", JSON.stringify(currentTime));
     
 }
-
-player.setCurrentTime(JSON.parse(localStorage.getItem("videoplayer-current-time")));
+const localSaveTime = JSON.parse(localStorage.getItem("videoplayer-current-time"))
+player.setCurrentTime(localSaveTime);
